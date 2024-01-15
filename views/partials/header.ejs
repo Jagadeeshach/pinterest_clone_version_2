@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  
+</head>
+<body>
+  <% if(nav === true){ %>
+    <div class="w-full px-10 py-3 flex justify-between bg-zinc-800 text-white items-center">
+      <div class="flex gap-5 items-center">
+        <h3 class="h-10 w-10"><img src="/images/Pinterest-logo.png" alt="img2"></h3>
+        <div class="h-[28px] w-[57px] bg-white flex items-center text-black rounded-full font-bold justify-center "><a href="/feed">Home</a></div>
+        <a href="#" class="font-bold">Explore</a>
+        <a href="/add" class="font-bold">Create</a>
+        <div class="w-[450px] h-[50px] rounded-full bg-zinc-700 flex justify-center items-center">
+          <i class="ri-search-2-line"></i>
+          <input type="text" class="w-[85%]  h-[100%]  bg-zinc-700 p-2 border-none outline-none " placeholder="Search">
+        </div>
+        
+        
+        
+
+      </div>
+      
+      <div class="flex gap-10 items-center">
+        
+        <a href="#"><i class="ri-notification-2-fill w-[50px] h-10"></i></a>
+        <a href="#"><i class="ri-message-2-line"></i></a>
+        <a class=" px-[3px] py-[3px] h-[58px] w-[58px] bg-white text-white rounded-full overflow-hidden flex items-center justify-center" href="/profile"><img class="rounded-full object-cover" src="/images/uploads/<%= user.profileImage%>" alt="profile"></a>
+      </div>
+    </div>
+  
+  <% } %>
+ 
